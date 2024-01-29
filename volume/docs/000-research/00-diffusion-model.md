@@ -30,14 +30,14 @@
     - [【論文解説】Diffusion Modelを理解する](https://data-analytics.fun/2022/02/03/understanding-diffusion-model/)
     - [Computer Vision & Learning Group](https://ommer-lab.com/research/latent-diffusion-models/)
 
-**Diffusion Model**
+### Diffusion Model
 
 ![](https://ommer-lab.com/wp-content/uploads/2022/08/article-Figure3-1-1024x508.png)
 
-**reverse process（逆拡散過程）のイメージ（U-Netの出力は潜在空間ノイズなので厳密には画像ではないことに注意する）**
+### reverse process（逆拡散過程）のイメージ（U-Netの出力は潜在空間ノイズなので厳密には画像ではないことに注意する）
 
 ![](https://qiita-user-contents.imgix.net/https%3A%2F%2Fi.imgur.com%2FBRUncxB.gif?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=1b104d38498660c2084087972ced9e26)
 
-**forward process と reverse process の関係**
+### forward process と reverse process の関係
 
 ![](https://data-analytics.fun/wp-content/uploads/2022/02/image-12-768x489.png)

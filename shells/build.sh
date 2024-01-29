@@ -1,1 +1,1 @@
-docker exec -i mkdocs /bin/ash -c "mkdocs build"
+docker exec -i mkdocs-ai-image-generation /bin/ash -c "mkdocs build"

@@ -8,22 +8,28 @@
       
       
       
+        <link rel="canonical" href="http://0.0.0.0/mkdocs/000-research/00-diffusion-model.html">
       
       
+        <link rel="prev" href="../index.html">
       
-      <link rel="icon" href="/mkdocs/assets/images/favicon.png">
+      
+        <link rel="next" href="../100-software-stable-diffusion-webui/01-install.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
     
     
       
-        <title>MkDocs AI Image Generation</title>
+        <title>Diffusion Model について - MkDocs AI Image Generation</title>
       
     
     
-      <link rel="stylesheet" href="/mkdocs/assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="/mkdocs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("/mkdocs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#diffusion-model" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="/mkdocs/index.html" title="MkDocs AI Image Generation" class="md-header__button md-logo" aria-label="MkDocs AI Image Generation" data-md-component="logo">
+    <a href="../index.html" title="MkDocs AI Image Generation" class="md-header__button md-logo" aria-label="MkDocs AI Image Generation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Diffusion Model について
             
           </span>
         </div>
@@ -178,7 +189,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/mkdocs/index.html" title="MkDocs AI Image Generation" class="md-nav__button md-logo" aria-label="MkDocs AI Image Generation" data-md-component="logo">
+    <a href="../index.html" title="MkDocs AI Image Generation" class="md-nav__button md-logo" aria-label="MkDocs AI Image Generation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -196,7 +207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mkdocs/index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -213,21 +224,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -241,7 +252,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             研究
@@ -252,10 +263,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/mkdocs/000-research/00-diffusion-model.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Diffusion Model について
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="00-diffusion-model.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -264,6 +295,79 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像生成AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diffusion-model_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diffusion Model(拡散モデル)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diffusion Model(拡散モデル)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diffusion-model_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diffusion Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse-processu-net" class="md-nav__link">
+    <span class="md-ellipsis">
+      reverse process（逆拡散過程）のイメージ（U-Netの出力は潜在空間ノイズなので厳密には画像ではないことに注意する）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward-process-reverse-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      forward process と reverse process の関係
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -322,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mkdocs/100-software-stable-diffusion-webui/01-install.html" class="md-nav__link">
+      <a href="../100-software-stable-diffusion-webui/01-install.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -389,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mkdocs/300-benchmark/00-benchmark-hatsune-miku-1.html" class="md-nav__link">
+      <a href="../300-benchmark/00-benchmark-hatsune-miku-1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -410,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mkdocs/300-benchmark/01-benchmark-middle-aged-man-1.html" class="md-nav__link">
+      <a href="../300-benchmark/01-benchmark-middle-aged-man-1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -431,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mkdocs/300-benchmark/02-benchmark-sdxl.html" class="md-nav__link">
+      <a href="../300-benchmark/02-benchmark-sdxl.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mkdocs/300-benchmark/03-benchmark-middle-aged-hatsunemiku-1.html" class="md-nav__link">
+      <a href="../300-benchmark/03-benchmark-middle-aged-hatsunemiku-1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -473,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mkdocs/300-benchmark/04-benchmark-sdxl-to-love-ru.html" class="md-nav__link">
+      <a href="../300-benchmark/04-benchmark-sdxl-to-love-ru.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -513,6 +617,67 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像生成AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diffusion-model_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diffusion Model(拡散モデル)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diffusion Model(拡散モデル)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diffusion-model_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diffusion Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse-processu-net" class="md-nav__link">
+    <span class="md-ellipsis">
+      reverse process（逆拡散過程）のイメージ（U-Netの出力は潜在空間ノイズなので厳密には画像ではないことに注意する）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward-process-reverse-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      forward process と reverse process の関係
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -524,8 +689,69 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="diffusion-model">Diffusion Model について<a class="headerlink" href="#diffusion-model" title="Permanent link">&para;</a></h1>
+<h2 id="ai">画像生成AI<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h2>
+<p>22年12月に公開された日本経済新聞の「<a href="https://vdata.nikkei.com/newsgraphics/ai-art/">AIが描く絵 見分けられる?</a>」のように人間が作成したものかどうかの区別が難しくなるほど近年の画像生成AIの進化はめざましいものがある。</p>
+<p>サービスとして公開されているものは以下のものが代表される。これらのサービスは有料で制限があり、オンライン環境で利用することが基本である。</p>
+<ul>
+<li><a href="https://www.midjourney.com/home/">Midjourney</a></li>
+<li><a href="https://novelai.net/">NovelAI</a></li>
+<li><a href="https://leonardo.ai/">Leonardo.Ai</a></li>
+</ul>
+<p>これらのサービスに対して、本記事ではローカル環境で無制限にAI画像生成を試すことができるStable Diffusion Web UIを中心にその利用方法やTIPSについて記していく。</p>
+<h2 id="diffusion-model_1">Diffusion Model(拡散モデル)<a class="headerlink" href="#diffusion-model_1" title="Permanent link">&para;</a></h2>
+<p><a href="https://arxiv.org/abs/2112.10752">High-Resolution Image Synthesis with Latent Diffusion Models</a>で提唱されている画像生成手法。
+主に下記のような特徴を有する。</p>
+<ul>
+<li>forward process（拡散過程）とreverse process（逆拡散過程）を用いて画像とノイズ間の変換を行う<ul>
+<li>forward process<ul>
+<li>画像にノイズを加えながら、最終的にノイズ画像を生成する確率過程</li>
+</ul>
+</li>
+<li>reverse process<ul>
+<li>forward processの逆をたどることで画像を生成する確率過程</li>
+<li>U-Netを用いる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>画像生成する場合<ul>
+<li>乱数生成したノイズ画像に対してreverse processを実行して反復的にノイズを取り除くことで画像を生成する<ul>
+<li>reverse processごとに潜在空間でベクトル化したConditioningの<strong>text</strong>や<strong>画像</strong>をconcatすることで、生成内容に指向性を持たせる</li>
+</ul>
+</li>
+<li>最終的に逆拡散後の潜在空間ノイズにVAE(Variational Autoencoder) Decorderをかけて、画像に戻す。</li>
+</ul>
+</li>
+<li>参考<ul>
+<li><a href="https://qiita.com/omiita/items/ecf8d60466c50ae8295b">世界に衝撃を与えた画像生成AI「Stable Diffusion」を徹底解説！</a></li>
+<li><a href="https://data-analytics.fun/2022/02/03/understanding-diffusion-model/">【論文解説】Diffusion Modelを理解する</a></li>
+<li><a href="https://ommer-lab.com/research/latent-diffusion-models/">Computer Vision &amp; Learning Group</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="diffusion-model_2">Diffusion Model<a class="headerlink" href="#diffusion-model_2" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://ommer-lab.com/wp-content/uploads/2022/08/article-Figure3-1-1024x508.png" /></p>
+<h3 id="reverse-processu-net">reverse process（逆拡散過程）のイメージ（U-Netの出力は潜在空間ノイズなので厳密には画像ではないことに注意する）<a class="headerlink" href="#reverse-processu-net" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fi.imgur.com%2FBRUncxB.gif?ixlib=rb-4.0.0&amp;auto=format&amp;gif-q=60&amp;q=75&amp;w=1400&amp;fit=max&amp;s=1b104d38498660c2084087972ced9e26" /></p>
+<h3 id="forward-process-reverse-process">forward process と reverse process の関係<a class="headerlink" href="#forward-process-reverse-process" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://data-analytics.fun/wp-content/uploads/2022/02/image-12-768x489.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -583,10 +809,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/mkdocs/", "features": ["navigation.expand", "navigation.top", "header.autohide", "search.suggest", "search.highlight", "content.tabs.link"], "search": "/mkdocs/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": 1.0}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.top", "header.autohide", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": 1.0}</script>
     
     
-      <script src="/mkdocs/assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      <script src="../assets/javascripts/bundle.e1c3ead8.min.js"></script>
       
         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
