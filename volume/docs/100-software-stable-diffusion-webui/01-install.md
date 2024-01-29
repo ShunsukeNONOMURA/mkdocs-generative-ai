@@ -17,7 +17,7 @@ chmod 755 webui.sh
 webui.sh実行後にブラウザから利用できるようになるため、
 Stable Diffusion checkpointを選び、Generateを押すと何かしらの絵が得られ、outputs以下に保存される。  
 デフォルトだとSD1.5のモデルが利用できる。
-![](./init.png)
+![](./01-install/init.png)
 
 ### No module 'xformers'. Proceeding without it.
 下記のようにしてxformersを利用するパラメータを加えれば良い([参考](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5303#discussioncomment-6423824))。  
@@ -48,18 +48,19 @@ export COMMANDLINE_ARGS="--xformers"
 ## Settings
 自分が利用しやすいように必要に応じて設定変更する。
 
-### VAEの上書き切り替えを表示
+### VAEの上書き切り替えとを表示
 1. Settingsに移動
 1. User interfaceに移動
-1. Quicksettings list に sd_vae を追加
-    - デフォルトはsd_model_checkpointのみ
+1. Quicksettings list に下記を追加（デフォルトはsd_model_checkpointのみ）
+    - sd_vae
+    - CLIP_stop_at_last_layers
 1. Apply settingsをクリック
 1. ページを再読込すると上部に表示されるようになる
     - デフォルトはAutomatic
     - Noneを指定すると、モデルに内蔵されているVAEが利用される
     - VAEをモデルに内包したものも多いので、設定しなくても十分機能することも多い
 
-### 保存名(日付-seed)に変更
+### 保存名を「保存時刻-seed」に変更
 1. Settingsに移動
 1. Saving images/gridsに移動
 1. Images filename patternを次のように書き換える
@@ -67,69 +68,42 @@ export COMMANDLINE_ARGS="--xformers"
 1. Add number to filename when saving のチェックを外す
 1. Apply settingsをクリック
 
+### jpgの生成閾値変更
+1. Settingsに移動
+1. Saving images/gridsに移動
+1. File size limit for the above option, MBを4から変更する
+    - もしくは Save copy of large images as JPG のチェックを外すと生成されなくなる
+
 ## モデル導入
-SDXL用のリソースを中心に配布されているモデルを組み込んでいく。  
-下記のサイトに色々と公開されているので、必要に応じてDLする。  
+SDXL用のモデルを中心に組み込んでいく。    
 
-- https://civitai.com/
-- https://huggingface.co/
-
-<!-- < -----------------途中----------------- -->
-
-### Baseモデル
-/models/Stable-diffusion に配置  
-
-sd_xl_base_1.0.safetensors  
-https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main?_fsi=3kT7R9AB
-
-### VAE（Variational Auto-Encoder）
-/models/VAE に配置  
-
-sdxl_vae.safetensors  
-https://huggingface.co/stabilityai/sdxl-vae/tree/main?_fsi=3kT7R9AB
-
-### [まだ] Refinerモデル
-sd_xl_refiner_1.0.safetensors  
-https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/tree/main?_fsi=3kT7R9AB&_fsi=3kT7R9AB
-
-### Emmbedings
-/embeddings に配置
-
-negativeXL  
-https://civitai.com/models/118418/negativexl
-
-### Lora
-/models/Lora に配置  
-FlatXL  
-https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/sdxl/sdxl-flat.safetensors
-
-### Upscaler
-/models/ESRGAN に配置
-
-4x-Ultrasharp
-https://civitai.com/models/116225/4x-ultrasharp
-.pt -> .pthに拡張子変更する
-
-### ControlNet
-/models/ControlNet に配置
-
-https://huggingface.co/lllyasviel/sd_control_collection/tree/main
-https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/tree/main
-
-
-### LyCORIS
-/models/LyCORIS に配置（ない場合作成）  
-
-BadHands SDXL (negative Lycoris/LoKr)
-
-https://civitai.com/models/128969/badhands-sdxl-negative-lycorislokr
+| 種類             | 配布元                                                                                                                                          | 保存先                   | 備考                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------------- |
+| Baseモデル       | [stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main?_fsi=3kT7R9AB)                         | /models/Stable-diffusion |                            |
+| Baseモデル       | [CounterfeitXL](https://civitai.com/models/118406?modelVersionId=265012)                         | /models/Stable-diffusion |                            |
+| Refinerモデル    | [sd_xl_refiner_1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/tree/main?_fsi=3kT7R9AB&_fsi=3kT7R9AB)                   | /models/Stable-diffusion |                            |
+| VAE              | [sdxl_vae](https://huggingface.co/stabilityai/sdxl-vae/tree/main?_fsi=3kT7R9AB)                                                                 | /models/VAE              |                            |
+| Upscaler         | [4x-Ultrasharp](https://civitai.com/models/116225/4x-ultrasharp)                                                                                | /models/ESRGAN           |                            |
+| Lora             | [sdxl-flat](https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/sdxl/sdxl-flat.safetensors)                                                   | /models/Lora             |                            |
+| LyCORIS          | [Neg4All_XL](https://civitai.com/models/116480/sdxl10neg4allxlboth-positive-high-qualitydetails-and-negative-worse-qualitybad-hand-in-one-lora) | /models/LyCORIS          | 保存先がない場合作成する   |
+| ControlNetモデル | [lllyasviel/sd_control_collection ](https://huggingface.co/lllyasviel/sd_control_collection/tree/main)                                          | /models/ControlNet       | 必要に応じてモデルを入れる |
+| ControlNetモデル | [bdsqlsz/qinglong_controlnet-lllite](https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/tree/main)                                       | /models/ControlNet       | 必要に応じてモデルを入れる |
+| Emmbedings       | [negativeXL](https://civitai.com/models/118418/negativexl)                                                                                      | /embeddings              |                            |
 
 ## 動作確認
-初音ミクをパラメータを変えながら生成してみる。
+初音ミクをパラメータを変えながらいくつか生成してみる。
+パラメータ詳細は画像に埋めてあるので直接見ること。  
 
-sdxl系は1024×1024で学習されているので、出力画像の解像度はこのサイズに近い方が出力が安定する。
+### 生成方針
+- 解像度はシンプルな方法でFHD化させる
+    - 960 × 1440 で生成
+        - sdxl系は1024×1024で学習されているので、生成解像度はこのサイズに近い方が出力が安定する。
+    - 1440 × 2160 に1.5倍高解像度化
+        - hires fixは1.5倍以内程度が安定する。
+- モデル導入で入れたものを段階的に適用する
 
-hires fixは1.5倍以内程度が安定する。
+### 生成結果
+#### Baseモデル + VAE(Automatic : sdxl_vae) + 4x-Ultrasharp
+![](./01-install/20240129-203211-683204-1634727883.png)
 
-1. 960 × 1440 で出力
-1. 1440 × 2160 に1.5倍高解像度化
+#### +Emmbedings

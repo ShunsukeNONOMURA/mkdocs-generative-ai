@@ -9,7 +9,6 @@
 - [Zundamon XL](https://civitai.com/images/5938238)
     - 作風を引き継いでずんだもんを描くのに利用
 - [4x-Ultrasharp](https://civitai.com/models/116225/4x-ultrasharp)
-    - .pt から .pth に要変換
 
 ## 生成方針
 - civitaiのLoraモデルの生成例を参考にパラメータ設定する
@@ -42,6 +41,6 @@
     - hires fix
         - 1.5倍以内ぐらいが結果が安定しやすい感触
             -  (960 × 1440) * 1.5 -> 1440 × 2160
-- 1440 × 2160 に upscaleしているが、RTX4090のGPUメモリ利用率が23.5/23.6426 GB (99.4%)でかなりギリギリ
+- 1440 × 2160 に hires fix で upscale しているが、RTX4090のGPUメモリ利用率が23.5/23.6426 GB (99.4%)でかなりギリギリ
     - Xformersが機能していないかも？
 - ずんだもんの触角？がよく消えてしまう。
