@@ -21,8 +21,6 @@
 ### 結果1
 ![](20231010-123806-363035-3593958495.png)
 
-<!-- ![](20231010-123709-687031-3593958495.png) -->
-
 ```
 japanese, (middle aged man:1.7), smirk, half open eyes, fat, (ugly:1.2), single, belly is hanging out, <lora:hatsunemiku1:1> (hatsunemiku:1.5)
 Negative prompt: EasyNegative, bad-hands-5, woman, girl, suit
@@ -32,7 +30,6 @@ Steps: 30, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 3593958495, Size: 512x7
 ### 結果2
 ![](20231010-122702-291365-2161719691.png)
 
-<!-- ![](20231010-122548-448958-2161719691.png) -->
 ```
 japanese, (middle aged man:1.5), smirk, half open eyes, fat, (ugly:1.2), single, belly is hanging out, <lora:hatsunemiku1:1> (hatsunemiku:1.5)
 Negative prompt: EasyNegative, bad-hands-5, woman, girl, suit

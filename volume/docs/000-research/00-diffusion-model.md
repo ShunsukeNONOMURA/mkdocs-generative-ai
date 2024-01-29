@@ -1,15 +1,12 @@
 # Diffusion Model について
 
 ## 画像生成AI
-22年12月に公開された日本経済新聞の「[AIが描く絵 見分けられる?](https://vdata.nikkei.com/newsgraphics/ai-art/)」のように人間が作成したものかどうかの区別が難しくなるほど近年の画像生成AIの進化はめざましいものがある。
-
-サービスとして公開されているものは以下のものが代表される。これらのサービスは有料で制限があり、オンライン環境で利用することが基本である。
+22年12月に公開された日本経済新聞の「[AIが描く絵 見分けられる?](https://vdata.nikkei.com/newsgraphics/ai-art/)」のように人間が作成したものかどうかの区別が難しくなるほど近年の画像生成AIの進化はめざましいものがある。  
+サービスとして公開されているものは以下のものが代表される
 
 - [Midjourney](https://www.midjourney.com/home/)
 - [NovelAI](https://novelai.net/)
 - [Leonardo.Ai](https://leonardo.ai/)
-
-これらのサービスに対して、本記事ではローカル環境で無制限にAI画像生成を試すことができるStable Diffusion Web UIを中心にその利用方法やTIPSについて記していく。
 
 ## Diffusion Model(拡散モデル) 
 [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752)で提唱されている画像生成手法。
@@ -34,7 +31,9 @@
 
 ![](https://ommer-lab.com/wp-content/uploads/2022/08/article-Figure3-1-1024x508.png)
 
-### reverse process（逆拡散過程）のイメージ（U-Netの出力は潜在空間ノイズなので厳密には画像ではないことに注意する）
+### reverse process（逆拡散過程）のイメージ
+U-Netの出力は潜在空間ノイズなので厳密には画像ではないことに注意すること。  
+画像化するときはVAEを用いて潜在空間ノイズから変換する。
 
 ![](https://qiita-user-contents.imgix.net/https%3A%2F%2Fi.imgur.com%2FBRUncxB.gif?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=1b104d38498660c2084087972ced9e26)
 

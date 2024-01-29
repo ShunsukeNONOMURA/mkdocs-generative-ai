@@ -11,7 +11,7 @@
         <link rel="canonical" href="http://0.0.0.0/mkdocs/100-software-stable-diffusion-webui/01-install.html">
       
       
-        <link rel="prev" href="../000-research/00-diffusion-model.html">
+        <link rel="prev" href="../000-research/01-stable-diffusion.html">
       
       
         <link rel="next" href="../300-benchmark/00-benchmark-hatsune-miku-1.html">
@@ -280,6 +280,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../000-research/01-stable-diffusion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stable Diffusion について
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -449,11 +470,11 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      リソース導入
+      モデル導入
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="リソース導入">
+    <nav class="md-nav" aria-label="モデル導入">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -477,7 +498,7 @@
           <li class="md-nav__item">
   <a href="#refiner" class="md-nav__link">
     <span class="md-ellipsis">
-      Refinerモデル
+      [まだ] Refinerモデル
     </span>
   </a>
   
@@ -505,6 +526,24 @@
   <a href="#upscaler" class="md-nav__link">
     <span class="md-ellipsis">
       Upscaler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controlnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      ControlNet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lycoris" class="md-nav__link">
+    <span class="md-ellipsis">
+      LyCORIS
     </span>
   </a>
   
@@ -788,11 +827,11 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      リソース導入
+      モデル導入
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="リソース導入">
+    <nav class="md-nav" aria-label="モデル導入">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -816,7 +855,7 @@
           <li class="md-nav__item">
   <a href="#refiner" class="md-nav__link">
     <span class="md-ellipsis">
-      Refinerモデル
+      [まだ] Refinerモデル
     </span>
   </a>
   
@@ -844,6 +883,24 @@
   <a href="#upscaler" class="md-nav__link">
     <span class="md-ellipsis">
       Upscaler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controlnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      ControlNet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lycoris" class="md-nav__link">
+    <span class="md-ellipsis">
+      LyCORIS
     </span>
   </a>
   
@@ -955,15 +1012,15 @@ Stable Diffusion checkpointを選び、Generateを押すと何かしらの絵が
 <li>Add number to filename when saving のチェックを外す</li>
 <li>Apply settingsをクリック</li>
 </ol>
-<!-- < -----------------途中----------------- -->
-
-<h2 id="_2">リソース導入<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">モデル導入<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>SDXL用のリソースを中心に配布されているモデルを組み込んでいく。<br />
 下記のサイトに色々と公開されているので、必要に応じてDLする。  </p>
 <ul>
 <li><a href="https://civitai.com/">https://civitai.com/</a></li>
 <li><a href="https://huggingface.co/">https://huggingface.co/</a></li>
 </ul>
+<!-- < -----------------途中----------------- -->
+
 <h3 id="base">Baseモデル<a class="headerlink" href="#base" title="Permanent link">&para;</a></h3>
 <p>/models/Stable-diffusion に配置  </p>
 <p>sd_xl_base_1.0.safetensors<br />
@@ -972,7 +1029,7 @@ Stable Diffusion checkpointを選び、Generateを押すと何かしらの絵が
 <p>/models/VAE に配置  </p>
 <p>sdxl_vae.safetensors<br />
 <a href="https://huggingface.co/stabilityai/sdxl-vae/tree/main?_fsi=3kT7R9AB">https://huggingface.co/stabilityai/sdxl-vae/tree/main?_fsi=3kT7R9AB</a></p>
-<h3 id="refiner">Refinerモデル<a class="headerlink" href="#refiner" title="Permanent link">&para;</a></h3>
+<h3 id="refiner">[まだ] Refinerモデル<a class="headerlink" href="#refiner" title="Permanent link">&para;</a></h3>
 <p>sd_xl_refiner_1.0.safetensors<br />
 <a href="https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/tree/main?_fsi=3kT7R9AB&amp;_fsi=3kT7R9AB">https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/tree/main?_fsi=3kT7R9AB&amp;_fsi=3kT7R9AB</a></p>
 <h3 id="emmbedings">Emmbedings<a class="headerlink" href="#emmbedings" title="Permanent link">&para;</a></h3>
@@ -988,8 +1045,22 @@ FlatXL<br />
 <p>4x-Ultrasharp
 <a href="https://civitai.com/models/116225/4x-ultrasharp">https://civitai.com/models/116225/4x-ultrasharp</a>
 .pt -&gt; .pthに拡張子変更する</p>
+<h3 id="controlnet">ControlNet<a class="headerlink" href="#controlnet" title="Permanent link">&para;</a></h3>
+<p>/models/ControlNet に配置</p>
+<p><a href="https://huggingface.co/lllyasviel/sd_control_collection/tree/main">https://huggingface.co/lllyasviel/sd_control_collection/tree/main</a>
+<a href="https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/tree/main">https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/tree/main</a></p>
+<h3 id="lycoris">LyCORIS<a class="headerlink" href="#lycoris" title="Permanent link">&para;</a></h3>
+<p>/models/LyCORIS に配置（ない場合作成）  </p>
+<p>BadHands SDXL (negative Lycoris/LoKr)</p>
+<p><a href="https://civitai.com/models/128969/badhands-sdxl-negative-lycorislokr">https://civitai.com/models/128969/badhands-sdxl-negative-lycorislokr</a></p>
 <h2 id="_3">動作確認<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>初音ミクをパラメータを変えながら生成してみる。</p>
+<p>sdxl系は1024×1024で学習されているので、出力画像の解像度はこのサイズに近い方が出力が安定する。</p>
+<p>hires fixは1.5倍以内程度が安定する。</p>
+<ol>
+<li>960 × 1440 で出力</li>
+<li>1440 × 2160 に1.5倍高解像度化</li>
+</ol>
 
 
 

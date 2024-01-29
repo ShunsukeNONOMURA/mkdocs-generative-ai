@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://0.0.0.0/mkdocs/000-research/01-stable-diffusion.html</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://0.0.0.0/mkdocs/100-software-stable-diffusion-webui/01-install.html</loc>
          <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>

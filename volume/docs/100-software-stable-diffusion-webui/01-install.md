@@ -67,14 +67,14 @@ export COMMANDLINE_ARGS="--xformers"
 1. Add number to filename when saving のチェックを外す
 1. Apply settingsをクリック
 
-<!-- < -----------------途中----------------- -->
-
-## リソース導入
+## モデル導入
 SDXL用のリソースを中心に配布されているモデルを組み込んでいく。  
 下記のサイトに色々と公開されているので、必要に応じてDLする。  
 
 - https://civitai.com/
 - https://huggingface.co/
+
+<!-- < -----------------途中----------------- -->
 
 ### Baseモデル
 /models/Stable-diffusion に配置  
@@ -88,7 +88,7 @@ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main?_fsi=3
 sdxl_vae.safetensors  
 https://huggingface.co/stabilityai/sdxl-vae/tree/main?_fsi=3kT7R9AB
 
-### Refinerモデル
+### [まだ] Refinerモデル
 sd_xl_refiner_1.0.safetensors  
 https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/tree/main?_fsi=3kT7R9AB&_fsi=3kT7R9AB
 
@@ -110,5 +110,26 @@ https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/sdxl/sdxl-flat.safetensors
 https://civitai.com/models/116225/4x-ultrasharp
 .pt -> .pthに拡張子変更する
 
+### ControlNet
+/models/ControlNet に配置
+
+https://huggingface.co/lllyasviel/sd_control_collection/tree/main
+https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/tree/main
+
+
+### LyCORIS
+/models/LyCORIS に配置（ない場合作成）  
+
+BadHands SDXL (negative Lycoris/LoKr)
+
+https://civitai.com/models/128969/badhands-sdxl-negative-lycorislokr
+
 ## 動作確認
 初音ミクをパラメータを変えながら生成してみる。
+
+sdxl系は1024×1024で学習されているので、出力画像の解像度はこのサイズに近い方が出力が安定する。
+
+hires fixは1.5倍以内程度が安定する。
+
+1. 960 × 1440 で出力
+1. 1440 × 2160 に1.5倍高解像度化

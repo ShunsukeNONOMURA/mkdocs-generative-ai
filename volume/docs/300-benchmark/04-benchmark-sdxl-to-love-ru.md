@@ -21,9 +21,7 @@
         - Hires steps : 高解像度化する際のステップ数（0の時sampling stepsと同じになる）
         - Denoising strength : ノイズ除去強度
 - Hires. fix をかけてFHDにupscaleする
-    - ControlNet Tile の正式版モデルは執筆時点ではなさそう。アルファ版や代替は下記のリンク。軽く試した範囲だとまだ微妙なところだったので今後に期待。
-    - https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/tree/main
-    - https://huggingface.co/lllyasviel/sd_control_collection/tree/main
+    - ControlNet Tile の正式版モデルは執筆時点ではなさそう。軽く試した範囲だとまだ微妙なところだったので今後に期待。
 
 ## 生成結果
 - parameterについてはpngに埋め込んであるので、確認したい場合は画像から抜いてくること（基本的にはLoraのサンプルのコピペ）。
