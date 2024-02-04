@@ -1,4 +1,3 @@
-Controle Net
 # 【簡易記述中】ファインチューニング
 - Dreambooth
     - モデル全体を更新する
