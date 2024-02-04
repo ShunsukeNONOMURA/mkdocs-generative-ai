@@ -1,4 +1,4 @@
-# 途中【SDXL】AUTOMATIC1111/stable-diffusion-webui 導入 (v1.7.0)
+# 【SDXL】AUTOMATIC1111/stable-diffusion-webui 導入 (v1.7.0)
 stable diffusion を実行する上で便利なツールである、[AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)の導入について記載する。
 
 なお、筆記時点の構築確認環境はUbuntu22.04である。
@@ -21,7 +21,7 @@ Stable Diffusion checkpointを選び、Generateを押すと何かしらの絵が
 
 ### No module 'xformers'. Proceeding without it.
 下記のようにしてxformersを利用するパラメータを加えれば良い([参考](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5303#discussioncomment-6423824))。  
-差分画像を取ってわかる程度に生成結果が変わるが、基本的には有効化しておいたほうが省メモリ化(5~10%)＋高速化(20~30%)されるので有効化しておくと良い。  
+生成結果が多少変わるが、基本的には有効化しておいたほうが省メモリ化(5〜10%)＋高速化(20〜30%)されるので大抵有効化しておくと良い。  
 ```
 ./webui.sh --xformers
 ```
@@ -69,6 +69,7 @@ export COMMANDLINE_ARGS="--xformers"
 1. Apply settingsをクリック
 
 ### jpgの生成閾値変更
+
 1. Settingsに移動
 1. Saving images/gridsに移動
 1. File size limit for the above option, MBを4から変更する
@@ -80,7 +81,8 @@ SDXL用のモデルを中心に組み込んでいく。
 | 種類             | 配布元                                                                                                                                          | 保存先                   | 備考                       |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------------- |
 | Baseモデル       | [stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main?_fsi=3kT7R9AB)                         | /models/Stable-diffusion |                            |
-| Baseモデル       | [CounterfeitXL](https://civitai.com/models/118406?modelVersionId=265012)                         | /models/Stable-diffusion |                            |
+| Baseモデル       | [CounterfeitXL](https://civitai.com/models/118406?modelVersionId=265012)                                                                        | /models/Stable-diffusion |                            |
+| Baseモデル       | [Animagine XL V3](https://civitai.com/models/260267)                                                                                            | /models/Stable-diffusion |                            |
 | Refinerモデル    | [sd_xl_refiner_1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/tree/main?_fsi=3kT7R9AB&_fsi=3kT7R9AB)                   | /models/Stable-diffusion |                            |
 | VAE              | [sdxl_vae](https://huggingface.co/stabilityai/sdxl-vae/tree/main?_fsi=3kT7R9AB)                                                                 | /models/VAE              |                            |
 | Upscaler         | [4x-Ultrasharp](https://civitai.com/models/116225/4x-ultrasharp)                                                                                | /models/ESRGAN           |                            |
@@ -91,19 +93,8 @@ SDXL用のモデルを中心に組み込んでいく。
 | Emmbedings       | [negativeXL](https://civitai.com/models/118418/negativexl)                                                                                      | /embeddings              |                            |
 
 ## 動作確認
-初音ミクをパラメータを変えながらいくつか生成してみる。
-パラメータ詳細は画像に埋めてあるので直接見ること。  
+初音ミクをパラメータを変えながらいくつか生成してみる。  
+パラメータ詳細は画像に埋めてあるのでここでは割愛。  
 
-### 生成方針
-- 解像度はシンプルな方法でFHD化させる
-    - 960 × 1440 で生成
-        - sdxl系は1024×1024で学習されているので、生成解像度はこのサイズに近い方が出力が安定する。
-    - 1440 × 2160 に1.5倍高解像度化
-        - hires fixは1.5倍以内程度が安定する。
-- モデル導入で入れたものを段階的に適用する
-
-### 生成結果
-#### Baseモデル + VAE(Automatic : sdxl_vae) + 4x-Ultrasharp
-![](./01-install/20240129-203211-683204-1634727883.png)
-
-#### +Emmbedings
+<img src="./01-install/20240204-180706-149366-4040222180.png" width="50%" style="vertical-align:middle;"/><img src="./01-install/20240204-043108-160335-4040222180.png" width="50%" style="vertical-align:middle;"/>
+<img src="./01-install/20240204-043040-487160-4040222180.png" width="50%" style="vertical-align:middle;"/><img src="./01-install/20240204-043007-296402-4040222180.png" width="50%" style="vertical-align:middle;"/>

@@ -1,5 +1,12 @@
 # 後で取り組みたいメモ
 
+LLuL(Local Latent upscaLer)
+
+Cutoff
+https://github.com/hnmr293/sd-webui-cutoff
+
+BREAK
+
 ## Fooocus
 https://ascii.jp/elem/000/004/153/4153910/
 
@@ -11,11 +18,6 @@ https://ascii.jp/elem/000/004/153/4153910/
 
 ## AnyLoRA
 [【Stable Diffusion】LoRAと相性の良いモデルAnyLoRA](https://self-development.info/%E3%80%90stable-diffusion%E3%80%91lora%E3%81%A8%E7%9B%B8%E6%80%A7%E3%81%AE%E8%89%AF%E3%81%84%E3%83%A2%E3%83%87%E3%83%ABanylora/)
-
-## 画風Lora
-
-[【Stable Diffusion】リズム天国スタイルの画像生成が可能なLoRA](https://self-development.info/%E3%80%90stable-diffusion%E3%80%91%E3%83%AA%E3%82%BA%E3%83%A0%E5%A4%A9%E5%9B%BD%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%81%8C%E5%8F%AF%E8%83%BD%E3%81%AAlora/)
-
 
 ## 使い方1
 
