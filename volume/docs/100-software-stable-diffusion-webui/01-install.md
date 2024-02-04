@@ -1,4 +1,4 @@
-# 【SDXL】AUTOMATIC1111/stable-diffusion-webui 導入 (v1.7.0)
+# stable-diffusion-webui 導入 (v1.7.0)
 stable diffusion を実行する上で便利なツールである、[AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)の導入について記載する。
 
 なお、筆記時点の構築確認環境はUbuntu22.04である。
