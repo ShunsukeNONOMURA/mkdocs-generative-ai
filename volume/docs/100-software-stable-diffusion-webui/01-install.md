@@ -43,6 +43,9 @@ export COMMANDLINE_ARGS="--xformers"
     - LyCORIS
         - https://github.com/KohakuBlueleaf/LyCORIS
         - 強化版Lora
+    - ADetailer
+        - https://github.com/Bing-su/adetailer.git
+        - 部分修正
 1. Apply and restart UI を押して有効化する
 
 ## Settings

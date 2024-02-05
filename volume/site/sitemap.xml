@@ -2,47 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://0.0.0.0/mkdocs/index.html</loc>
-         <lastmod>2024-02-04</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://0.0.0.0/mkdocs/000-research/00-diffusion-model.html</loc>
-         <lastmod>2024-02-04</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://0.0.0.0/mkdocs/000-research/01-stable-diffusion.html</loc>
-         <lastmod>2024-02-04</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://0.0.0.0/mkdocs/000-research/02-fine-tuning.html</loc>
-         <lastmod>2024-02-04</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://0.0.0.0/mkdocs/100-software-stable-diffusion-webui/01-install.html</loc>
-         <lastmod>2024-02-04</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://0.0.0.0/mkdocs/300-benchmark/00-benchmark-hatsune-miku-1.html</loc>
-         <lastmod>2024-02-04</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://0.0.0.0/mkdocs/300-benchmark/01-benchmark-middle-aged-man-1.html</loc>
-         <lastmod>2024-02-04</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://0.0.0.0/mkdocs/300-benchmark/03-benchmark-middle-aged-hatsunemiku-1.html</loc>
-         <lastmod>2024-02-04</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://0.0.0.0/mkdocs/300-benchmark/04-benchmark-sdxl-to-love-ru.html</loc>
-         <lastmod>2024-02-04</lastmod>
+         <lastmod>2024-02-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://0.0.0.0/mkdocs/300-benchmark/05-benchmark-adetailer-emotion.html</loc>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
