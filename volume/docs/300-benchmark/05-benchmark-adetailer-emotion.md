@@ -28,8 +28,10 @@ face_yolov8n.pt モデルを利用し顔を検出しつつ、下記のように�
 <img src="./05-benchmark-adetailer-emotion/20240205-015234-980315-1820494072-expressionlessness.png" width="25%" style="vertical-align:middle;"/><img src="./05-benchmark-adetailer-emotion/20240205-023307-144144-1820494072-smile2.png" width="25%" style="vertical-align:middle;"/><img src="./05-benchmark-adetailer-emotion/20240205-030024-909832-1820494072-repulsed.png" width="25%" style="vertical-align:middle;"/><img src="./05-benchmark-adetailer-emotion/20240205-021228-872335-1820494072-angry2.png" width="25%" style="vertical-align:middle;"/>
 <img src="./05-benchmark-adetailer-emotion/20240205-030800-523189-1820494072-sad.png" width="25%" style="vertical-align:middle;"/><img src="./05-benchmark-adetailer-emotion/20240205-031316-597722-1820494072-fear2.png" width="25%" style="vertical-align:middle;"/><img src="./05-benchmark-adetailer-emotion/20240205-024252-002128-1820494072-surprised.png" width="25%" style="vertical-align:middle;"/><img src="./05-benchmark-adetailer-emotion/20240205-021616-949082-1820494072-embarrassed2.png" width="25%" style="vertical-align:middle;"/>
 
-<!-- ### 失敗例 -->
-
+### 失敗例
+| 髪の色が変わりすぎる                                                           | そもそも顔にならない                                                           |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| ![](./05-benchmark-adetailer-emotion/20240205-011934-583353-1820494072-f0.png) | ![](./05-benchmark-adetailer-emotion/20240205-013612-314176-1820494072-f1.png) |
 
 ### 所感
 - 顔部分が置き換えになるので目の色や髪の色など顔に関係するプロンプトはセットで渡してしまったほうが良さそう。
