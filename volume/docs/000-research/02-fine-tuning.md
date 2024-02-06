@@ -18,3 +18,7 @@
 ![](https://preview.redd.it/well-researched-comparison-of-training-techniques-lora-v0-vl01e5grs6ca1.png?width=1080&crop=smart&auto=webp&v=enabled&s=f19779b56fc1f90484f92048dcda0812f9e0d8f0)
 
 https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/
+
+
+## 参考
+- [LoRAとLyCORIS(LoCon、LoHa、DyLoRA)まとめ](https://ai-joyful.com/lycoris/)

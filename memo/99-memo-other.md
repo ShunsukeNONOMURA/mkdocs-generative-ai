@@ -1,4 +1,5 @@
 # 後で取り組みたいメモ
+comfyUI
 
 LLuL(Local Latent upscaLer)
 
@@ -27,15 +28,11 @@ https://ascii.jp/elem/000/004/153/4153910/
 顔部分だけを後で補正するプラグイン。Controle Net tilesでも似たようなことできるので比較したい。
 [【Stable Diffusion】もう顔が崩れない！表情差分も作れるADetailerの使い方！](https://freeblog-video.com/stable-diffusion_extensions_adetailer/)
 
-https://github.com/Bing-su/adetailer
-
-
 ## Controle net 1.1
 reference-only 
 [Stable Diffusionで同じ顔のグラビア画像を複製する reference-only の使い方](https://oiuy.net/archives/326)
 
 ## model
-
 [Stable Diffusion【2023年6月】最新のおすすめモデル7つを厳選紹介!](https://photoshopbook.com/2023/06/11/stable-diffusion-models-202306/)
 
 ## テクニックまとめ

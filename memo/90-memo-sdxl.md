@@ -1,9 +1,3 @@
-sdxl-flat
-https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/sdxl/sdxl-flat.safetensors
-
-CounterfeitXL
-https://civitai.com/models/118406/counterfeitxl
-
 BArtstyleDB | XL | Blue Archive Art Style Fine-tuned Model Base on Animagine XL V3 | 碧蓝档案画风大模型 | ブルアカ画風モデル
 https://civitai.com/models/212253/bartstyledb-or-xl-or-blue-archive-art-style-fine-tuned-model-base-on-animagine-xl-v3-or-or
 
