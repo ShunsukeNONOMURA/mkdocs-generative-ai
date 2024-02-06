@@ -1,4 +1,4 @@
-# MkDocs AI Image Generation
+# MkDocs Generative AI
 生成系AIやその応用に関する記事を記述するためのリポジトリ
 
 ## リンク
