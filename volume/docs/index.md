@@ -4,4 +4,4 @@
 なお、筆者の環境は基本的にLinux環境なので、この環境に準じた内容で記載している。
 
 ## リンク
-- [Github Repository](https://github.com/ShunsukeNONOMURA/mkdocs-ai-image-generation)
+- [Github Repository](https://github.com/ShunsukeNONOMURA/mkdocs-generative-ai)
