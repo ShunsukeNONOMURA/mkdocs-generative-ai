@@ -139,3 +139,4 @@ https://civitai.com/models/15752/lovelivecharacter-official-art-style-lora
 # キャラクター
 [LoRA Anzu Mazaki / Yu-Gi-Oh!](https://civitai.com/models/259424/lora-anzu-mazaki-yu-gi-oh)
 
+

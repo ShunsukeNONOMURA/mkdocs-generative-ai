@@ -1,4 +1,4 @@
-site_name: MkDocs AI Image Generation
+site_name: MkDocs Generative AI
 # mkdocsをルートとする
 site_url: http://0.0.0.0/mkdocs
 theme:
