@@ -29,7 +29,9 @@
 
 ![](./04-benchmark-sdxl-to-love-ru/20240128-051322-047281-142081694.png)
 
-![](./04-benchmark-sdxl-to-love-ru/20240128-213724-317868-3969892722.png)
+<!-- ![](./04-benchmark-sdxl-to-love-ru/20240128-213724-317868-3969892722.png) -->
+
+![](./04-benchmark-sdxl-to-love-ru/20240216-220559-452440-3597887813.png)
 
 ![](./04-benchmark-sdxl-to-love-ru/20240128-214749-704665-4070261750.png)
 

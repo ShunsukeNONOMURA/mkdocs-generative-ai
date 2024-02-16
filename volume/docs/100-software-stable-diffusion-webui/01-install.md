@@ -46,6 +46,9 @@ export COMMANDLINE_ARGS="--xformers"
     - ADetailer
         - https://github.com/Bing-su/adetailer.git
         - 部分修正
+    - Photopea
+        - https://github.com/yankooliveira/sd-webui-photopea-embed
+        - 画像編集ソフト（再保存してメタデータを削除するなど）
 1. Apply and restart UI を押して有効化する
 
 ## Settings

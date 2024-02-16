@@ -1,5 +1,5 @@
-# sadtalkerでの顔アニメーションの作成
-sadtalkerで一枚の人物画像と音声ファイルで動画作成できる。  
+# SadTalkerでの顔アニメーションの作成
+[SadTalker](https://sadtalker.github.io/)で一枚の人物画像と音声ファイルで動画作成できる。  
 stable diffusion webuiにプラグインがあるので利用してみる。  
 
 ## ベース画像
